@@ -1,0 +1,347 @@
+fileFormatVersion: 2
+guid: 9bb738d7b64ddb244a7e6c5527794ac1
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: frost_farge
+    second: {fileID: 1891889971167480116, guid: 8b3034f414cd699449375541b0c99407, type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__frost_farge
+    second: {fileID: 1891889971167480116, guid: 8b3034f414cd699449375541b0c99407, type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__oye
+    second: {fileID: 2100000, guid: a4ce86d07850e88448fbd2b50e44ad3c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__standardSurface3
+    second: {fileID: 2100000, guid: e640436bad94558439ce376dc7e029f6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__standardSurface5
+    second: {fileID: 2100000, guid: 47a9105423b16734a8c9151ad72004ef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: skofra_Salma2_pasted__pasted__aiStandardSurface8
+    second: {fileID: 2100000, guid: a4ce86d07850e88448fbd2b50e44ad3c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: skofra_Salma2_pasted__pasted__sho_bu
+    second: {fileID: 2100000, guid: e640436bad94558439ce376dc7e029f6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: standardSurface2
+    second: {fileID: 2100000, guid: 47a9105423b16734a8c9151ad72004ef, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 1
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton:
+    - name: FROSK(Clone)
+      parentName: 
+      position: {x: 0.0036133837, y: -0.012878129, z: 0.022770066}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Hips
+      parentName: FROSK(Clone)
+      position: {x: 0.00003806739, y: 0.010661153, z: 0.0008391412}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_LeftUpLeg
+      parentName: Character1_Hips
+      position: {x: 0.0025453507, y: -0.00073685957, z: 0.0005327964}
+      rotation: {x: -0.07393755, y: 0, z: -0, w: 0.9972629}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_LeftLeg
+      parentName: Character1_LeftUpLeg
+      position: {x: 1.110223e-18, y: -0.0035598665, z: -0.00073259353}
+      rotation: {x: 1.038282e-15, y: -4.4805968e-17, z: 2.0948647e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_LeftFoot
+      parentName: Character1_LeftLeg
+      position: {x: -0.00029146552, y: -0.0046707545, z: 0.00046619415}
+      rotation: {x: -0.06327186, y: 0, z: -0, w: 0.99799633}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_LeftToeBase
+      parentName: Character1_LeftFoot
+      position: {x: 0.0000000017881393, y: -0.0009194672, z: -0.003922931}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface27
+      parentName: Character1_LeftLeg
+      position: {x: -0.00015560388, y: -0.003430673, z: -0.00094246207}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface24
+      parentName: Character1_LeftUpLeg
+      position: {x: -0.00020483493, y: -0.0007876369, z: -0.0000913202}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.48026252, y: 0.48026252, z: 0.48026252}
+    - name: Character1_RightUpLeg
+      parentName: Character1_Hips
+      position: {x: -0.0025453505, y: -0.00073685957, z: 0.0005327964}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_RightLeg
+      parentName: Character1_RightUpLeg
+      position: {x: -0, y: -0.0035598665, z: -0.00073259353}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_RightFoot
+      parentName: Character1_RightLeg
+      position: {x: 0.00029146543, y: -0.0046707545, z: 0.00046619415}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_RightToeBase
+      parentName: Character1_RightFoot
+      position: {x: -0.0000000016391277, y: -0.0013059039, z: -0.003922931}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface28
+      parentName: Character1_RightLeg
+      position: {x: 0.00006307103, y: -0.003430673, z: -0.00094246207}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface23
+      parentName: Character1_RightUpLeg
+      position: {x: 0.0001640749, y: -0.00075445144, z: -0.0005389203}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.48026252, y: 0.48026252, z: 0.48026252}
+    - name: Character1_Spine
+      parentName: Character1_Hips
+      position: {x: -0, y: 0.0032604157, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_LeftShoulder
+      parentName: Character1_Spine
+      position: {x: 0.0016795777, y: 0.0026695207, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_LeftArm
+      parentName: Character1_LeftShoulder
+      position: {x: 0.00080607296, y: -0.00043474644, z: 0}
+      rotation: {x: 0, y: 0.0059355446, z: -0, w: 0.9999824}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_LeftForeArm
+      parentName: Character1_LeftArm
+      position: {x: 0.0025927895, y: -0.0016148745, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_LeftHand
+      parentName: Character1_LeftForeArm
+      position: {x: 0.0044148285, y: -0.0025154771, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface22
+      parentName: Character1_LeftArm
+      position: {x: 0.0036584109, y: -0.0020080952, z: -0.00055273593}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_RightShoulder
+      parentName: Character1_Spine
+      position: {x: -0.0016795777, y: 0.0026695207, z: -0.00048563478}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_RightArm
+      parentName: Character1_RightShoulder
+      position: {x: -0.00080607313, y: -0.00043474644, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_RightForeArm
+      parentName: Character1_RightArm
+      position: {x: -0.0025927892, y: -0.0016148745, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_RightHand
+      parentName: Character1_RightForeArm
+      position: {x: -0.004414829, y: -0.0025154771, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface21
+      parentName: Character1_RightArm
+      position: {x: 0.0008326995, y: 0.00057285663, z: -0.00006710112}
+      rotation: {x: -0.0020475164, y: 0.012304741, z: -0.0023682169, w: 0.9999194}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Neck
+      parentName: Character1_Spine
+      position: {x: -0, y: 0.003926827, z: -0.00045130966}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Head
+      parentName: Character1_Neck
+      position: {x: -0, y: 0.0033875569, z: -0.00005513668}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: hode1
+      parentName: Character1_Neck
+      position: {x: -0.00012692869, y: 0.0041314946, z: -0.0012966299}
+      rotation: {x: 0.05565632, y: -0, z: -0.25036708, w: 0.9665499}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pSphere16
+      parentName: hode1
+      position: {x: -0.0039029776, y: 0.0026085651, z: -0.0008676268}
+      rotation: {x: -0.000000014901163, y: 0.09056963, z: 0.7310589, w: 0.6762766}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pSphere17
+      parentName: pasted__pSphere16
+      position: {x: 0.007887152, y: -2.220446e-18, z: 0}
+      rotation: {x: -0.37320536, y: 0.67112225, z: -0.057583332, w: 0.63796306}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__polySurface37
+      parentName: pasted__pSphere17
+      position: {x: -0.004325518, y: -0.0015114091, z: 0.010419107}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__polySurface36
+      parentName: pasted__polySurface37
+      position: {x: -9.992007e-18, y: 0, z: -4.440892e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__polySurface38
+      parentName: hode1
+      position: {x: -0.0034556394, y: -0.009101688, z: 0.009894821}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsToPoly4
+      parentName: Character1_Hips
+      position: {x: -0.0000053951144, y: 0.0023583034, z: -0.00003641546}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: forkle1_outputCloth1
+      parentName: nurbsToPoly4
+      position: {x: -0.00016644636, y: 0.0017683906, z: -0.00008730337}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface32
+      parentName: forkle1_outputCloth1
+      position: {x: -0.0035097133, y: -0.0019097186, z: 0.0082706}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface33
+      parentName: forkle1_outputCloth1
+      position: {x: -0.0035097133, y: -0.0019097186, z: 0.0082706}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface34
+      parentName: forkle1_outputCloth1
+      position: {x: -0.0035097133, y: -0.0019097186, z: 0.0082706}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface35
+      parentName: forkle1_outputCloth1
+      position: {x: -0.0035097133, y: -0.0019097186, z: 0.0082706}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform27
+      parentName: forkle1_outputCloth1
+      position: {x: -0.0035097133, y: -0.0019097186, z: 0.0082706}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

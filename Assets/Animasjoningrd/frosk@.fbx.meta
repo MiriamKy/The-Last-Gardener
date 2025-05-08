@@ -8,37 +8,37 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: frost_farge
-    second: {fileID: 2100000, guid: 4257ddb9d731d324d8db6439512b6ef1, type: 2}
+    second: {fileID: 2100000, guid: 58f932e45f942ba44a9fc1125393db21, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: oye
-    second: {fileID: 2100000, guid: 22833d1013bbeef4a96057da5da7284a, type: 2}
+    second: {fileID: 2100000, guid: a4ce86d07850e88448fbd2b50e44ad3c, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: skofra_Salma2_pasted__pasted__aiStandardSurface8
-    second: {fileID: 2100000, guid: 22833d1013bbeef4a96057da5da7284a, type: 2}
+    second: {fileID: 2100000, guid: a4ce86d07850e88448fbd2b50e44ad3c, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: skofra_Salma2_pasted__pasted__sho_bu
-    second: {fileID: 2100000, guid: e15c7645a17d84145b00c128d03847ec, type: 2}
+    second: {fileID: 2100000, guid: e640436bad94558439ce376dc7e029f6, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: standardSurface2
-    second: {fileID: 2100000, guid: bd478821a79efcd449fab2dcd65c8525, type: 2}
+    second: {fileID: 2100000, guid: 47a9105423b16734a8c9151ad72004ef, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: standardSurface3
-    second: {fileID: 2100000, guid: e15c7645a17d84145b00c128d03847ec, type: 2}
+    second: {fileID: 2100000, guid: e640436bad94558439ce376dc7e029f6, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: standardSurface5
-    second: {fileID: 2100000, guid: bd478821a79efcd449fab2dcd65c8525, type: 2}
+    second: {fileID: 2100000, guid: 47a9105423b16734a8c9151ad72004ef, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

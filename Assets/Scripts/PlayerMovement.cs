@@ -79,7 +79,7 @@ public class PlayerMovement : MonoBehaviour
 
         // animator.SetFloat("xMove", xMove);
 
-        if (plantDetect.DetectClimbPlant() && zMove != 0)
+        if (plantDetect.CanClimb() && zMove != 0)
         {
             isClimbing = true;
             // animator.SetBool("isClimbing", true);

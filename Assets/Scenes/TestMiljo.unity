@@ -1215,7 +1215,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed1b96a6d23d58c4188727036f32b333, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  detectClimbPlant: 0
+  canClimb: 0
 --- !u!1 &1294658142
 GameObject:
   m_ObjectHideFlags: 0
@@ -1475,11 +1475,11 @@ GameObject:
   - component: {fileID: 1520751414}
   m_Layer: 0
   m_Name: EarthWet
-  m_TagString: Untagged
+  m_TagString: Wet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1520751413
 Transform:
   m_ObjectHideFlags: 0
@@ -1754,7 +1754,7 @@ GameObject:
   - component: {fileID: 1562930144}
   m_Layer: 0
   m_Name: EarthDry
-  m_TagString: Untagged
+  m_TagString: Dry
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

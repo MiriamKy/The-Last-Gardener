@@ -19,7 +19,7 @@ public class SeedDetect : MonoBehaviour
     // Else - logg til konsollen
     private void Input_OnInteractAction()
     {
-        if(detectClimbSeed)
+        if (detectClimbSeed)
         {
             GameManager.Instance.AddClimbSeed();
         } 

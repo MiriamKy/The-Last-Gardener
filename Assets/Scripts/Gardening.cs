@@ -43,33 +43,46 @@ public class Gardening : MonoBehaviour
 
     private void Input_OnGardeningAction()
     {
-        if (detectDryEarth) // + vannkannen har vann i seg (lage en bool)
-        {
-            if(otherGameObject != null)
-            {
-                otherGameObject.tag = "Wet";
-                Debug.Log("Tag changed to Wet");
-                // Kalle på metoden som fjerner vannet fra vannkannen i gameManager
-                // Deaktivere DryEarthVisual
-                // Aktivere WetEarthVisual
-            }
-
-        }
-        else if (detectWetEarth) //
-        {
-            if(otherGameObject != null)
-            {
-                // Endre tagen på jorda til planted eller null, kan endres senere
-                otherGameObject.tag = "Planted";
-                Debug.Log("Tag changed to Planted");
-                seedPlant.Plant();
-                GameManager.Instance.RemoveClimbSeed();
-            }
-        }
         if (detectPlanted)
         {
             Debug.Log("Jorda er allerede plantet");
             // Legge til beskjed i UI om at jorda er plantet
+        }
+        else if (detectWetEarth)
+        {
+            if (otherGameObject != null)
+            {
+                otherGameObject.tag = "Planted";
+                Debug.Log("Tag changed to Planted");
+                seedPlant.Plant();
+                GameManager.Instance.RemoveClimbSeed();
+                GameManager.Instance.RemoveWater();
+            }
+        }
+        else if (detectDryEarth)
+        {
+            if (otherGameObject != null)
+            {
+                // START HER, DET ER NOE HER SOM IKKE FUNKER
+                for (int i = 0; i < transform.childCount; i++)
+                {
+                    Transform earthVisualChild = transform.GetChild(i);
+                    if (earthVisualChild.CompareTag("Dry"))
+                    {
+                        earthVisualChild.GetChild(0).gameObject.SetActive(false);
+                    }
+                    if (earthVisualChild.CompareTag("Wet"))
+                    {
+                        earthVisualChild.GetChild(0).gameObject.SetActive(true);
+                    }
+                }
+            }
+            otherGameObject.tag = "Wet";
+            Debug.Log("Tag changed to Wet");
+
+            // Kalle på metoden som fjerner vannet fra vannkannen i gameManager
+            // Deaktivere DryEarthVisual
+            // Aktivere WetEarthVisual
         }
         else
         {

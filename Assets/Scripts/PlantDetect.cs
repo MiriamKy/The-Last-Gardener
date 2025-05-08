@@ -4,7 +4,7 @@ using UnityEngine.Windows;
 
 public class PlantDetect : MonoBehaviour
 {
-    [SerializeField] private bool detectClimbPlant = false;
+    [SerializeField] private bool canClimb = false;
 
     private PlayerControls playerInput;
     void Start()
@@ -23,8 +23,8 @@ public class PlantDetect : MonoBehaviour
 
         if (other.CompareTag("Climbable"))
         {
-            detectClimbPlant = true;
-            Debug.Log("Detect Plant");
+            canClimb = true;
+            Debug.Log("Detected climbable object");
             //Endre bevegelsesretning fra X til Y på "w"-tastetrykk
         }
     }
@@ -33,14 +33,13 @@ public class PlantDetect : MonoBehaviour
     {
         if (other.CompareTag("Climbable"))
         {
-            detectClimbPlant = false;
-            Debug.Log("Detect ikke sant");
+            canClimb = false;
             //Endre bevegelsesretning fra Y til X på "w"-tastetrykk
         }
     }
 
-    public bool DetectClimbPlant()
+    public bool CanClimb()
     {
-        return detectClimbPlant;
+        return canClimb;
     }
 }

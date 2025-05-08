@@ -21,7 +21,7 @@ public class PlantDetect : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
 
-        if (other.CompareTag("ClimbPlant"))
+        if (other.CompareTag("Climbable"))
         {
             detectClimbPlant = true;
             Debug.Log("Detect Plant");
@@ -31,7 +31,7 @@ public class PlantDetect : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("ClimbPlant"))
+        if (other.CompareTag("Climbable"))
         {
             detectClimbPlant = false;
             Debug.Log("Detect ikke sant");

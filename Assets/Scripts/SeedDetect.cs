@@ -22,11 +22,14 @@ public class SeedDetect : MonoBehaviour
         if(detectClimbSeed)
         {
             GameManager.Instance.AddClimbSeed();
-        } if (detectWaterSeed) {
-            GameManager.Instance.AddWaterSeed();
-        } else
+        } 
+        if (detectWaterSeed) 
         {
-            Debug.Log("Ikke legg til");
+            GameManager.Instance.AddWaterSeed();
+        } 
+        else
+        {
+            Debug.Log("Ingen frø å plukke");
         }
     }
 

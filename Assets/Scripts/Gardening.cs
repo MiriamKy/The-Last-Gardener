@@ -1,15 +1,16 @@
 using UnityEngine;
 
-public class EarthDetect : MonoBehaviour
+public class Gardening : MonoBehaviour
 {
     // Variabler som skal fortelle oss om vi står i nærheten av et frø
     [SerializeField] private bool detectDryEarth = false;
     [SerializeField] private bool detectWetEarth = false;
+    [SerializeField] private bool detectPlanted = false;
 
     private GameObject otherGameObject = null;
 
-
     private PlayerMovement input;
+    public SeedPlant seedPlant;
 
     private void Start()
     {
@@ -17,31 +18,27 @@ public class EarthDetect : MonoBehaviour
         input.OnGardeningAction += Input_OnGardeningAction;
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("Dry"))
         {
             detectDryEarth = true;
+            detectWetEarth = false;
+            detectPlanted = false;
         }
         if (other.CompareTag("Wet"))
         {
             detectWetEarth = true;
+            detectDryEarth = false;
+            detectPlanted = false;
         }
-        otherGameObject = other.gameObject;
-    }
-
-    // Setter boolen til false når spilleren går ut av collideren
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Dry"))
+        if (other.CompareTag("Planted"))
         {
             detectDryEarth = false;
-        }
-        if (other.CompareTag("Wet"))
-        {
             detectWetEarth = false;
+            detectPlanted = true;
         }
-        otherGameObject = null;
+        otherGameObject = other.gameObject;
     }
 
     private void Input_OnGardeningAction()
@@ -51,7 +48,7 @@ public class EarthDetect : MonoBehaviour
             if(otherGameObject != null)
             {
                 otherGameObject.tag = "Wet";
-                Debug.Log("Tag chenged to Wet");
+                Debug.Log("Tag changed to Wet");
                 // Kalle på metoden som fjerner vannet fra vannkannen i gameManager
                 // Deaktivere DryEarthVisual
                 // Aktivere WetEarthVisual
@@ -65,9 +62,14 @@ public class EarthDetect : MonoBehaviour
                 // Endre tagen på jorda til planted eller null, kan endres senere
                 otherGameObject.tag = "Planted";
                 Debug.Log("Tag changed to Planted");
-                // Kalle på metoden som får den riktige planten til å vokse
-                // Kalle på metoden som fjerner frøet som ble brukt fra gameManager
+                seedPlant.Plant();
+                GameManager.Instance.RemoveClimbSeed();
             }
+        }
+        if (detectPlanted)
+        {
+            Debug.Log("Jorda er allerede plantet");
+            // Legge til beskjed i UI om at jorda er plantet
         }
         else
         {

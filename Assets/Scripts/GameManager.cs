@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     // Variabler til de ulike typene frø
     private int waterSeeds = 0;
     private int climbSeeds = 0;
-    private bool water = false;
+    private bool water = true;
 
     private void Awake()
     {

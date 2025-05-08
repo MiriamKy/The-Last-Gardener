@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Gardening : MonoBehaviour
@@ -11,6 +12,7 @@ public class Gardening : MonoBehaviour
 
     private PlayerMovement input;
     public SeedPlant seedPlant;
+    public Watering watering;
 
     private void Start()
     {
@@ -43,6 +45,8 @@ public class Gardening : MonoBehaviour
 
     private void Input_OnGardeningAction()
     {
+        Debug.Log("Input registrert");
+
         if (detectPlanted)
         {
             Debug.Log("Jorda er allerede plantet");
@@ -52,41 +56,19 @@ public class Gardening : MonoBehaviour
         {
             if (otherGameObject != null)
             {
-                otherGameObject.tag = "Planted";
-                Debug.Log("Tag changed to Planted");
-                seedPlant.Plant();
+                seedPlant.PlantGrow();
                 GameManager.Instance.RemoveClimbSeed();
-                GameManager.Instance.RemoveWater();
             }
         }
         else if (detectDryEarth)
         {
             if (otherGameObject != null)
             {
-                // START HER, DET ER NOE HER SOM IKKE FUNKER
-                for (int i = 0; i < transform.childCount; i++)
-                {
-                    Transform earthVisualChild = transform.GetChild(i);
-                    if (earthVisualChild.CompareTag("Dry"))
-                    {
-                        earthVisualChild.GetChild(0).gameObject.SetActive(false);
-                    }
-                    if (earthVisualChild.CompareTag("Wet"))
-                    {
-                        earthVisualChild.GetChild(0).gameObject.SetActive(true);
-                    }
-                }
+                Debug.Log("Rett før kallet på ChangeEarthVisual");
+                watering.ChangeEarthVisual();
+                Debug.Log("Rett etter kallet på ChangeEarthVisual");
+                GameManager.Instance.RemoveWater();
             }
-            otherGameObject.tag = "Wet";
-            Debug.Log("Tag changed to Wet");
-
-            // Kalle på metoden som fjerner vannet fra vannkannen i gameManager
-            // Deaktivere DryEarthVisual
-            // Aktivere WetEarthVisual
-        }
-        else
-        {
-            // "The earth is not watered or you need the correct seed to plant" skrives til en infobox
         }
     }
 

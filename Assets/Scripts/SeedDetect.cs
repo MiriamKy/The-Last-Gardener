@@ -27,10 +27,6 @@ public class SeedDetect : MonoBehaviour
         {
             GameManager.Instance.AddWaterSeed();
         } 
-        else
-        {
-            Debug.Log("Ingen frø å plukke");
-        }
     }
 
     private void OnTriggerEnter(Collider other)

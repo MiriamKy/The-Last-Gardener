@@ -12,12 +12,6 @@ public class PlantDetect : MonoBehaviour
         playerInput = new PlayerControls();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-    
-    }
-
     private void OnTriggerEnter(Collider other)
     {
 

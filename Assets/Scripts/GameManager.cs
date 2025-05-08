@@ -34,6 +34,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    /*private void Update()
+    {
+        Debug.Log("Game Manager Instance: " + Instance);
+    }*/
+
     // Disse metodene legger til frø i climbSeed osv.
     // Husk at det ikke skjer før du kaller metodene/
     public void AddClimbSeed()

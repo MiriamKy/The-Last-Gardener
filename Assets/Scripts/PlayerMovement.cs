@@ -2,7 +2,9 @@ using System;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
+using UnityEngine.Windows;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -10,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
 
     // Definerer farten til spilleren
     [SerializeField] public float speed = 5f;
+    [SerializeField] public float rotationSpeed = 1f;
 
     // staret med står i ro 
     private bool isWalking = false;
@@ -62,6 +65,10 @@ public class PlayerMovement : MonoBehaviour
         // Henter input fra bruker, og konverterer den til 3 dimensjoner
         Vector3 movementVector = playerInput.Player.Move.ReadValue<Vector3>();
 
+        //Vector3 moveDirection = new Vector3(movementVector.x, 0, movementVector.y);
+
+
+
 
         //Animasjon av karakteren ved gange
         if (movementVector == Vector3.zero)
@@ -72,10 +79,14 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             isWalking = true;
+
+            //rotasjon på karitene
+            //Vector3 rotationVector = movementVector.normalized;
+           //transform.rotation = Quaternion.LookRotation(moveDirection.normalized);
         }
         // Kobler på transform-komponentet for å kontrollere posisjonen til spilleren via input
         // Foreløpig raskeste løsning (kan bli behov for å legge til fysikk senere)
-        transform.Translate(speed * Time.deltaTime * movementVector);
+        transform.Translate(speed * Time.deltaTime * movementVector, Space.Self);
     }
 
     

@@ -57,17 +57,17 @@ public class Gardening : MonoBehaviour
             if (otherGameObject != null)
             {
                 seedPlant.PlantGrow();
-                GameManager.Instance.RemoveClimbSeed();
             }
         }
         else if (detectDryEarth)
         {
             if (otherGameObject != null)
             {
-                Debug.Log("Rett før kallet på ChangeEarthVisual");
+                // Debug.Log("Rett før kallet på ChangeEarthVisual");
                 watering.ChangeEarthVisual();
-                Debug.Log("Rett etter kallet på ChangeEarthVisual");
+                // Debug.Log("Rett etter kallet på ChangeEarthVisual");
                 GameManager.Instance.RemoveWater();
+                // Kjøre animasjon vanning på spilleren
             }
         }
     }

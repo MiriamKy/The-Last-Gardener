@@ -15,9 +15,10 @@ public class PlayerMovement : MonoBehaviour
     public event Action OnGardeningAction;
 
     private bool isWalking = false;
+    [SerializeField] private bool isClimbing = false;
     [SerializeField] public float speed = 5f; // Definerer farten til spilleren
     // [SerializeField] private float climbingSpeed = 3f; // Bruke? denne til å justere farten på klatring separat
-    [SerializeField] private bool isClimbing = false;
+    
 
     void Awake()
     {
@@ -32,10 +33,6 @@ public class PlayerMovement : MonoBehaviour
     private void OnDisable()
     {
         playerInput.Disable();
-    }
-    public void OnMove()
-    {
-        
     }
     void Start()
     {

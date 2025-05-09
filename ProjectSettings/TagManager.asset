@@ -11,6 +11,7 @@ TagManager:
   - ClimbPlant
   - Planted
   - Climbable
+  - WaterLily
   layers:
   - Default
   - TransparentFX

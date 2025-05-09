@@ -9,6 +9,7 @@ public class Watering : MonoBehaviour
         {
             gameObject.tag = "Wet";
             Debug.Log("Tag = wet");
+            GameManager.Instance.RemoveWater();
 
             for (int i = 0; i < transform.childCount; i++)
             {

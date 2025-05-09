@@ -9,6 +9,7 @@ public class SeedPlant : MonoBehaviour
         {
             gameObject.tag = "Planted";
             Debug.Log("Tag = planted");
+            GameManager.Instance.RemoveClimbSeed();
 
             for (int i = 0; i < transform.childCount; i++)
             {
@@ -21,19 +22,26 @@ public class SeedPlant : MonoBehaviour
                 }
             }
         }
-        /*if (GameManager.Instance.CurrentWaterSeeds() > 0)
+        else if (GameManager.Instance.CurrentWaterSeeds() > 0)
         {
+            gameObject.tag = "Planted";
+            Debug.Log("Tag = planted");
+            GameManager.Instance.RemoveWaterSeed();
+
             for (int i = 0; i < transform.childCount; i++)
             {
-                Transform plantVisualChild = transform.GetChild(i);
+                Transform lilyVisualChild = transform.GetChild(i);
+                Debug.Log("Før endring");
 
-                if (plantVisualChild.CompareTag("WaterLily"))
+                if (lilyVisualChild.CompareTag("WaterLily"))
                 {
-                    plantVisualChild.GetChild(0).gameObject.SetActive(true);
+                    Debug.Log("Etter funn av WaterLily");
+                    lilyVisualChild.GetChild(0).gameObject.SetActive(true);
+                    Debug.Log("Etter endring av barn til WaterLily");
                     break;
                 }
             }
-        }*/ // Kode til senere
+        }
         else
         {
             Debug.Log("You have no seeds to plant");

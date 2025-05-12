@@ -65,9 +65,9 @@ public class PlayerMovement : MonoBehaviour
         // Henter input fra bruker, og konverterer den til 3 dimensjoner
         Vector3 movementVector = playerInput.Player.Move.ReadValue<Vector3>();
 
-        Vector3 moveDirection = new Vector3(movementVector.x, 0, movementVector.y);
+        Vector3 moveDirection = new Vector3(movementVector.x, 0, movementVector.z);
 
-
+        Debug.Log(moveDirection);
 
 
         //Animasjon av karakteren ved gange
@@ -81,8 +81,10 @@ public class PlayerMovement : MonoBehaviour
             isWalking = true;
 
             //rotasjon på karitene
-            Vector3 rotationVector = movementVector.normalized;
-           transform.rotation = Quaternion.LookRotation(moveDirection.normalized);
+            //Vector3 rotationVector = movementVector.normalized;
+            Quaternion tilrotere = Quaternion.LookRotation(moveDirection.normalized, Vector3.up);
+
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, tilrotere, rotationSpeed * Time.deltaTime);
         }
         // Kobler på transform-komponentet for å kontrollere posisjonen til spilleren via input
         // Foreløpig raskeste løsning (kan bli behov for å legge til fysikk senere)
